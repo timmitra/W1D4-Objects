@@ -24,18 +24,25 @@
 @end
 
 
-@interface Newspaper : NSObject;
+@interface LetterOpener : NSObject
 
-- (void)read;
+- (void)openLetter:(Letter *)letterToBeOpened;
 
 @end
 
-@implementation Newspaper
+@implementation LetterOpener
 
-- (void)read
+- (void)openLetter:(Letter *)letterToBeOpened
 {
-  NSLog(@"You read a report of the latest going-ons worldwide.");
+  if (letterToBeOpened != nil) {
+    [letterToBeOpened read];
+  } else {
+    NSLog(@"The envelope was empty!");
+  }
+  
 }
+
+@end
 
 
 int main(int argc, const char * argv[])
@@ -43,14 +50,14 @@ int main(int argc, const char * argv[])
   
   @autoreleasepool {
     
-    // Create two new objects.
-    Newspaper *todaysPaper = [[Newspaper alloc] init];
-    Letter *todaysLetter = [[Letter alloc] init];
+    LetterOpener *plasticFork = [[LetterOpener alloc] init];
     
-    [todaysLetter read];
-    [todaysPaper read];
+    Letter *invitation = [Letter new];
+    Letter *paycheque = nil;
+    
+    [plasticFork openLetter:invitation];
+    [plasticFork openLetter:paycheque];
+    
   }
   return 0;
 }
-
-@end
