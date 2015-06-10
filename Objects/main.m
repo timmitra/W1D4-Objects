@@ -44,8 +44,8 @@ int main(int argc, const char * argv[])
   @autoreleasepool {
     
     // Create two new objects.
-    Newspaper *todaysPaper = [Newspaper new];
-    Letter *todaysLetter = [Letter new];
+    Newspaper *todaysPaper = [[Newspaper alloc] init];
+    Letter *todaysLetter = [[Letter alloc] init];
     
     [todaysLetter read];
     [todaysPaper read];
