@@ -24,6 +24,21 @@
 @end
 
 
+@interface BirthdayPartyInvitation : Letter;
+
+@end
+
+@implementation BirthdayPartyInvitation
+
+- (void)read
+{
+  [super read];
+  NSLog(@"It's an invitation to a friend's birthday party! They're old.");
+}
+
+@end
+
+
 @interface LetterOpener : NSObject
 
 - (void)openLetter:(Letter *)letterToBeOpened;
@@ -34,12 +49,7 @@
 
 - (void)openLetter:(Letter *)letterToBeOpened
 {
-  if (letterToBeOpened != nil) {
-    [letterToBeOpened read];
-  } else {
-    NSLog(@"The envelope was empty!");
-  }
-  
+  [letterToBeOpened read];
 }
 
 @end
@@ -50,14 +60,13 @@ int main(int argc, const char * argv[])
   
   @autoreleasepool {
     
-    LetterOpener *plasticFork = [[LetterOpener alloc] init];
+    // Create two objects.
+    Letter *todaysLetter = [Letter new];
+    Letter *todaysInvitation = [BirthdayPartyInvitation new];
     
-    Letter *invitation = [Letter new];
-    Letter *paycheque = nil;
-    
-    [plasticFork openLetter:invitation];
-    [plasticFork openLetter:paycheque];
-    
+    LetterOpener *fancyKnife = [LetterOpener new];
+    [fancyKnife openLetter:todaysLetter];
+    [fancyKnife openLetter:todaysInvitation];
   }
   return 0;
 }
