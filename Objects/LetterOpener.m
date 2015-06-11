@@ -11,9 +11,9 @@
 
 @implementation LetterOpener
 
-//- (void)openLetter:(Letter *)letterToBeOpened
-//{
-//  [letterToBeOpened read];
-//}
+- (void)openLetter:(Letter *)letterToBeOpened
+{
+  [letterToBeOpened read];
+}
 
 @end

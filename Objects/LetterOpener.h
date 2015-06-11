@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "Letter.h"
+#import "Letter.h"
 
 @interface LetterOpener : NSObject
 
-//- (void)openLetter:(Letter *)letterToBeOpened;
+- (void)openLetter:(Letter *)letterToBeOpened;
 
 @end

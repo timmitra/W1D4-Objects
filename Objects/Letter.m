@@ -10,9 +10,9 @@
 
 @implementation Letter
 
-//- (void)read
-//{
-//  NSLog(@"You read a touching personal message.");
-//}
+- (void)read
+{
+  NSLog(@"You read a touching personal message.");
+}
 
 @end

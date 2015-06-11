@@ -10,11 +10,11 @@
 
 @implementation BirthdayPartyInvitation
 
-//- (void)read
-//{
-//  [super read];
-//  NSLog(@"It's an invitation to a friend's birthday party! They're old.");
-//}
+- (void)read
+{
+  [super read];
+  NSLog(@"It's an invitation to a friend's birthday party! They're old.");
+}
 
 
 @end

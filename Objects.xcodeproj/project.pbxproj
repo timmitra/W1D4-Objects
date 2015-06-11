@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7792971B29C98500C0E69C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7792961B29C98500C0E69C /* Player.m */; };
+		2A77929A1B29C9BC00C0E69C /* PlayerLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7792991B29C9BC00C0E69C /* PlayerLetter.m */; };
 		2AC7C4BC1B28CF3800CD6928 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7C4BB1B28CF3800CD6928 /* main.m */; };
 		2AC7C4D71B290F2000CD6928 /* Letter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7C4D61B290F2000CD6928 /* Letter.m */; };
 		2AC7C4DA1B290F8A00CD6928 /* BirthdayPartyInvitation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7C4D91B290F8A00CD6928 /* BirthdayPartyInvitation.m */; };
@@ -26,6 +28,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A7792951B29C98500C0E69C /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		2A7792961B29C98500C0E69C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		2A7792981B29C9BC00C0E69C /* PlayerLetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerLetter.h; sourceTree = "<group>"; };
+		2A7792991B29C9BC00C0E69C /* PlayerLetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerLetter.m; sourceTree = "<group>"; };
 		2AC7C4B81B28CF3800CD6928 /* Objects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Objects; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC7C4BB1B28CF3800CD6928 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AC7C4D51B290F2000CD6928 /* Letter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letter.h; sourceTree = "<group>"; };
@@ -73,6 +79,10 @@
 				2AC7C4D61B290F2000CD6928 /* Letter.m */,
 				2AC7C4DB1B290FE000CD6928 /* LetterOpener.h */,
 				2AC7C4DC1B290FE000CD6928 /* LetterOpener.m */,
+				2A7792951B29C98500C0E69C /* Player.h */,
+				2A7792961B29C98500C0E69C /* Player.m */,
+				2A7792981B29C9BC00C0E69C /* PlayerLetter.h */,
+				2A7792991B29C9BC00C0E69C /* PlayerLetter.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -133,10 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A77929A1B29C9BC00C0E69C /* PlayerLetter.m in Sources */,
 				2AC7C4BC1B28CF3800CD6928 /* main.m in Sources */,
 				2AC7C4DA1B290F8A00CD6928 /* BirthdayPartyInvitation.m in Sources */,
 				2AC7C4DD1B290FE000CD6928 /* LetterOpener.m in Sources */,
 				2AC7C4D71B290F2000CD6928 /* Letter.m in Sources */,
+				2A7792971B29C98500C0E69C /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,12 +19,12 @@ int main(int argc, const char * argv[])
   @autoreleasepool {
     
     // Create two objects.
-    Letter *todaysLetter = [Letter new];
-//    Letter *todaysInvitation = [BirthdayPartyInvitation new];
+    Letter *todaysLetter = [[Letter alloc] init];
+    Letter *todaysInvitation = [BirthdayPartyInvitation new];
     
-//    LetterOpener *fancyKnife = [LetterOpener new];
-//    [fancyKnife openLetter:todaysLetter];
-//    [fancyKnife openLetter:todaysInvitation];
+    LetterOpener *fancyKnife = [LetterOpener new];
+    [fancyKnife openLetter:todaysLetter];
+    [fancyKnife openLetter:todaysInvitation];
   }
   return 0;
 }

@@ -10,6 +10,8 @@
 
 @interface Letter : NSObject
 
-//- (void)read;
+- (void)read;
+
+@property (nonatomic, strong) NSMutableArray *patients;
 
 @end
