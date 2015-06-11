@@ -8,51 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Letter : NSObject;
-
-- (void)read;
-
-@end
-
-@implementation Letter
-
-- (void)read
-{
-  NSLog(@"You read a touching personal message.");
-}
-
-@end
-
-
-@interface BirthdayPartyInvitation : Letter;
-
-@end
-
-@implementation BirthdayPartyInvitation
-
-- (void)read
-{
-  [super read];
-  NSLog(@"It's an invitation to a friend's birthday party! They're old.");
-}
-
-@end
-
-
-@interface LetterOpener : NSObject
-
-- (void)openLetter:(Letter *)letterToBeOpened;
-
-@end
-
-@implementation LetterOpener
-
-- (void)openLetter:(Letter *)letterToBeOpened
-{
-  [letterToBeOpened read];
-}
-
-@end
+#import "Letter.h"
+#import "BirthdayPartyInvitation.h"
+#import "LetterOpener.h"
 
 
 int main(int argc, const char * argv[])
@@ -62,11 +20,11 @@ int main(int argc, const char * argv[])
     
     // Create two objects.
     Letter *todaysLetter = [Letter new];
-    Letter *todaysInvitation = [BirthdayPartyInvitation new];
+//    Letter *todaysInvitation = [BirthdayPartyInvitation new];
     
-    LetterOpener *fancyKnife = [LetterOpener new];
-    [fancyKnife openLetter:todaysLetter];
-    [fancyKnife openLetter:todaysInvitation];
+//    LetterOpener *fancyKnife = [LetterOpener new];
+//    [fancyKnife openLetter:todaysLetter];
+//    [fancyKnife openLetter:todaysInvitation];
   }
   return 0;
 }
